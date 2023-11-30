@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body class="content">
+  @@include('html/header.html',{})
+  <main class="main">
+    <section class="intro">
+      <div class="container-desktop">
+        <div class="intro__grid-wrapper">
+          <p class="intro__title container-mob container-tablet">
+            В путешествие<br>
+            с крутыми<br>
+            попутчиками!
+          </p>
+          <div class="intro__contacts">
+            <div class="container-mob">
+              <div class="intro__contacts-wrapper">
+                <a class="contacts-link" href="mail:">
+                  <span class="contacts-link__icon contacts-link__icon--orange contacts-link__icon--tiny">
+                    <svg class="contacts-link__img contacts-link__img--blue contacts-link__img--call">
+                      <use href="./img/icons/icons.svg#icon_call">
+                    </svg>
+                  </span>
+                </a>
+                <a class="contacts-link" href="mail:">
+                  <span class="contacts-link__icon contacts-link__icon--yellow contacts-link__icon--tiny">
+                    <svg class="contacts-link__img contacts-link__img--blue contacts-link__img--mail">
+                      <use href="./img/icons/icons.svg#icon_mail">
+                    </svg>
+                  </span>
+                </a>
+                <button class="button-1">
+                  Авторизация
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="intro__article">
+            <div class="container-mob container-tablet">
+              <blockquote class="intro__blockquote">
+                <q class="intro__quote">Лучшее приложение,<br>что я видел в жизни!</q>
+                <cite class="intro__cite">
+                  Мурат Эльтазин<br>
+                  главный редактор<br>
+                  газеты «гаджетлайф»
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="intro__preview">
+            <div class="container-mob container-tablet">
+              <ul class="preview">
+                <li class="preview__item preview__item--special-orange">
+                  Выберите<br>
+                  направление
+                  <span class="preview__item-number">1</span>
+                </li>
+                <li class="preview__item preview__item--orange">
+                  Изучите идеи<br>
+                  путешественников
+                  <span class="preview__item-number">2</span>
+                </li>
+                <li class="preview__item preview__item--special-yellow">
+                  Находите тех,<br>кто похож на вас
+                  <span class="preview__item-number">3</span>
+                </li>
+                <li class="preview__item preview__item--yellow">
+                  Путешествуйте<br>
+                  вместе!
+                  <span class="preview__item-number">4</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about rounded-container rounded-container--about">
+      <div class="container-all">
+        <div class="about__wrapper">
+          <h2 class="about__title">О сервисе</h2>
+          <p class="about-text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими
+            идеями путешествий и черпайте вдохновение в чужих.
+          </p>
+          <p class="about__subtext">
+            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+          </p>
+          <div class="about__button">
+            <button class="button-2 button-2--large">
+              Подробнее
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="direction rounded-container">
+      <div class="container-all">
+        <div class="direction__wrapper">
+          <div class="direction__text-wrapper">
+            <h2 class="direction__title">
+              Направления
+            </h2>
+            <p class="direction__text">
+              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем
+              можно там заняться.
+            </p>
+          </div>
+          <div class="direction__country-list">
+            <div class="direction__country-card country-card">
+              <picture>
+                <source srcset="@img/thailand-desktop.png" media="(min-width: 768px)">
+                <img class="country-card__img" src="@img/thailand-mobile 1.png" alt="">
+              </picture>
+              <div class="country-card__info">
+                <div class="country-card__info-text">
+                  <p class="country-card__title">
+                    Таиланд
+                  </p>
+                  <p class="country-card__text">
+                    Джунгли зовут!<br>
+                  </p>
+                </div>
+                <div class="country-card__user">
+                  <svg class="country-card__user-icon">
+                    <use href="./img/icons/icons.svg#icon_user">
+                  </svg>
+                  <span class="country-card__number-users">18321</span>
+                </div>
+              </div>
+            </div>
+            <div class="direction__country-card country-card">
+              <picture>
+                <source srcset="@img/thailand-desktop.png" media="(min-width: 768px)">
+                <img class="country-card__img" src="@img/thailand-mobile 1.png" alt="">
+              </picture>
+              <div class="country-card__info">
+                <div class="country-card__info-text">
+                  <p class="country-card__title">
+                    Таиланд
+                  </p>
+                  <p class="country-card__text">
+                    Джунгли зовут!
+                  </p>
+                </div>
+                <div class="country-card__user">
+                  <svg class="country-card__user-icon">
+                    <use href="./img/icons/icons.svg#icon_user">
+                  </svg>
+                  <span class="country-card__number-users">18321</span>
+                </div>
+              </div>
+            </div>
+            <div class="direction__country-card country-card">
+              <picture>
+                <source srcset="@img/thailand-desktop.png" media="(min-width: 768px)">
+                <img class="country-card__img" src="@img/thailand-mobile 1.png" alt="">
+              </picture>
+              <div class="country-card__info">
+                <div class="country-card__info-text">
+                  <p class="country-card__title">
+                    Таиланд
+                  </p>
+                  <p class="country-card__text">
+                    Джунгли зовут!
+                  </p>
+                </div>
+                <div class="country-card__user">
+                  <svg class="country-card__user-icon">
+                    <use href="./img/icons/icons.svg#icon_user">
+                  </svg>
+                  <span class="country-card__number-users">18321</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="direction__button">
+            <button class="button-2">
+              Показать все
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="travelers rounded-container">
+      <div class="container-all">
+        <div class="travelers__wrapper">
+          <div class="travelers__text-wrapper">
+            <h2 class="travelers__title">
+              Попутчики
+            </h2>
+            <p class="travelers__text">
+              Все мы индивидуальны и у каждого<br>свой взгляд на идеальный отдых.<br>Одному нужен пляж и коктейль,<br>а
+              другому маршрут для хайкинга.
+            </p>
+            <p class="travelers__sub-text">
+              Теперь можно легко<br>найти единомышленников!
+            </p>
+          </div>
+          <div class="travelers__card-list">
+            <div class="travelers__card user-card">
+              <div class="user-card__avatar">
+                <img class="user-card__img" src="@img/demin-avatar.png" alt="">
+              </div>
+              <div class="user-card__info">
+                <div class="user-card__country-list">
+                  <img class="user-card__country-icon" src="@img/belgium-card-mob.png" alt="">
+                  <img class="user-card__country-icon" src="@img/czech-card-mob.png" alt="">
+                  <img class="user-card__country-icon" src="@img/france-card-mob.png" alt="">
+                </div>
+                <p class="user-card__name">Таня Фирсова</p>
+                <p class="user-card__hashteg">#ЗОЖ #ПП #Фитнес #пляж
+                  #авокадо #смузи</p>
+                <div class="user-card__checkbox-list">
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane" checked>
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                      <use href="./img/icons/icons.svg#icon_plane">
+                    </svg>
+                  </label>
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                      <use href="./img/icons/icons.svg#icon_bus">
+                    </svg>
+                  </label>
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                      <use href="./img/icons/icons.svg#icon_bicycle">
+                    </svg>
+                  </label>
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run">
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                      <use href="./img/icons/icons.svg#icon_run">
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <div class="user-card__rating rating">
+                <p class="rating__level">100</p>
+                <p class="rating__text">level</p>
+              </div>
+            </div>
+            <div class="user-card">
+              <div class="user-card__avatar">
+                <img class="user-card__img" src="@img/demin-avatar.png" alt="">
+              </div>
+              <div class="user-card__info">
+                <div class="user-card__country-list">
+                  <img class="user-card__country-icon" src="@img/belgium-card-mob.png" alt="">
+                  <img class="user-card__country-icon" src="@img/czech-card-mob.png" alt="">
+                  <img class="user-card__country-icon" src="@img/france-card-mob.png" alt="">
+                </div>
+                <p class="user-card__name">Таня Фирсова</p>
+                <p class="user-card__hashteg">#ЗОЖ #ПП #Фитнес #пляж
+                  #авокадо #смузи</p>
+                <div class="user-card__checkbox-list">
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                      <use href="./img/icons/icons.svg#icon_plane">
+                    </svg>
+                  </label>
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                      <use href="./img/icons/icons.svg#icon_bus">
+                    </svg>
+                  </label>
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                      <use href="./img/icons/icons.svg#icon_bicycle">
+                    </svg>
+                  </label>
+                  <label class="user-card__checkbox travel-checkbox">
+                    <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                    <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                      <use href="./img/icons/icons.svg#icon_run">
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              <div class="user-card__rating rating">
+                <p class="rating__level">100</p>
+                <p class="rating__text">level</p>
+              </div>
+            </div>
+          </div>
+          <div class="travelers__button">
+            <button class="button-2">
+              Показать всех
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="profil rounded-container">
+      <div class="container-all">
+        <div class="profil-wrapper">
+          <p class="profil__text">Добавьте свой профиль</p>
+          <ul class="profil__tariff-list">
+            <li class="profil__tariff-item">
+              <div class="profil__tariff-inner">
+                <p class="profil__tariff-option">Базовое размещение</p>
+                <p class="profil__tariff-price">Бесплатно</p>
+              </div>
+              <div class="profil__tariff-icon">
+                <p class="profil__tariff-number">1</p>
+              </div>
+            </li>
+            <li class="profil__tariff-item">
+              <div class="profil__tariff-inner">
+                <p class="profil__tariff-option">Вывод на первых позициях</p>
+                <p class="profil__tariff-price">99 руб./мес</p>
+              </div>
+              <div class="profil__tariff-icon">
+                <p class="profil__tariff-number">2</p>
+              </div>
+            </li>
+            <li class="profil__tariff-item">
+              <div class="profil__tariff-inner profil__tariff-inner--last">
+                <p class="profil__tariff-option">Кастомный цвет карточки</p>
+                <p class="profil__tariff-price">59 руб./мес</p>
+              </div>
+              <div class="profil__tariff-icon">
+                <p class="profil__tariff-number">3</p>
+              </div>
+            </li>
+          </ul>
+          <div class="profil__button-inner">
+            <span class="profil__button-icon">
+              <svg class="profil__button-img">
+                <use href="./img/icons/icons.svg#icon_worker">
+              </svg>
+            </span>
+            <button class="profil__button">
+              Показать тарифы для бизнеса
+            </button>
+          </div>
+          <div class="profil__popup">
+            <p class="profil__popup-title">
+              Бизнес-тарифы
+            </p>
+            <ul class="profil__popup-list">
+              <li class="profil__popup-item">
+                <p class="profil__popup-option">
+                  Реклама у блоггера
+                </p>
+                <p class="profil__popup-price">
+                  300 000 руб./пост
+                </p>
+              </li>
+              <li class="profil__popup-item">
+                <p class="profil__popup-option">
+                  Накрутка подписчиков
+                </p>
+                <p class="profil__popup-price">
+                  от 1 руб./шт.
+                </p>
+              </li>
+              <li class="profil__popup-item">
+                <p class="profil__popup-option">
+                  Лайки от ботов
+                </p>
+                <p class="profil__popup-price">
+                  от 20 коп./лайк
+                </p>
+              </li>
+              <li class="profil__popup-item">
+                <p class="profil__popup-option">
+                  Ваш продакт-плейсмент
+                </p>
+                <p class="profil__popup-price">
+                  Индивидуально
+                </p>
+              </li>
+            </ul>
+            <div class="profil__popup--close-button">
+              <button class="button-4">
+                Закрыть окно
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registration rounded-container">
+      <div class="container-all">
+        <div class="registration__wrapper">
+          <p class="registration__title">
+            Заинтересовались?
+          </p>
+          <p class="registration__text">
+            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a
+              class="registration__link-authorization">авторизуйтесь.</a>
+          </p>
+          <div class="registration__inner">
+            <input class="registration__input" type="email" placeholder="E-mail">
+            <button class="registration__button">
+              <span class="registration__button-text">Регистрация</span>
+              <svg class="registration__button-icon">
+                <use href="./img/icons/icons.svg#icon_button">
+              </svg>
+            </button>
+          </div>
+          <p class="registration__subtext">
+            Остались вопросы? Мы с радостью на них ответим!
+          </p>
+          <div class="registration__links">
+            <a class="registration__link" href="mail:">
+              <span class="registration__link-icon">
+                <svg class="registration__link-img registration__link-img--tel">
+                  <use href="./img/icons/icons.svg#icon_telephone">
+                </svg>
+              </span>
+              <span class="registration__link-text">8 800 555-86-28</span>
+            </a>
+            <a class="registration__link" href="mail:">
+              <span class="registration__link-icon">
+                <svg class="registration__link-img registration__link-img--email">
+                  <use href="./img/icons/icons.svg#icon_email">
+                </svg>
+              </span>
+              <span class="registration__link-text">mail@htmlacademy.ru</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="route rounded-container">
+      <div class="container-all">
+        <div class="route__wrapper">
+            <a class="contacts-link" href="mail:">
+              <span class="contacts-link__icon contacts-link__icon--blue contacts-link__icon--small">
+                <svg class="contacts-link__img contacts-link__img--location contacts-link__img--yellow">
+                  <use href="./img/icons/icons.svg#icon_location">
+                </svg>
+              </span>
+              <span class="contacts-link__text contacts-link__text--blue">ул. Большая Конюшенная, 19/8</span>
+            </a>
+            <div class="route__button">
+              <button class="button-2 button-2--border">
+                Проложить маршрут
+              </button>
+            </div> 
+        </div>
+      </div>
+    </section>
+    <section class="map">
+
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

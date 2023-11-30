@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body class="content">
+  @@include('html/header.html',{})
+  <main class="main">
+
+    <!-- Стртовый блок "Попутчики" -->
+    <section class="travelers-preview">
+      <div class="container-all">
+        <div class="travelers-preview__wrapper">
+          <h1 class="travelers-preview__title">
+            Попутчики
+          </h1>
+          <a class="travelers-preview__link" href="../index.html">
+            На главную
+            <svg class="travelers-preview__link-icon">
+              <use href="./img/icons/icons.svg#icon_back-arrow">
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фильтр -->
+    <section class="filter">
+
+      <!-- Фильтрация по странам -->
+      <section class="filter-location rounded-container">
+        <div class="container-all">
+
+          <!-- Шапка фильтрации по странам -->
+          <div class="filter-location__header">
+            <svg class="filter-location__icon">
+              <use href="./img/icons/icons.svg#icon_filter">
+            </svg>
+            <p class="filter-location__text">
+              Фильтрация по странам:
+            </p>
+  
+            <ul class="filter-location__continent-list-header">
+              <li class="filter-location__continent-item-header">
+                <button class="filter-location__continent-button-header filter-location__continent-button-header--active">
+                  Европа
+                </button>
+              </li>
+              <li class="filter-location__continent-item-header">
+                <button class="filter-location__continent-button-header">
+                  Азия
+                </button>
+              </li>
+              <li class="filter-location__continent-item-header">
+                <button class="filter-location__continent-button-header">
+                  Америка
+                </button>
+              </li>
+              <li class="filter-location__continent-item-header">
+                <button class="filter-location__continent-button-header">
+                  Острова
+                </button>
+              </li>
+            </ul>
+  
+            <button class="filter-location__button">
+              <span class="filter-location__button-icon"></span>
+            </button>
+          </div>
+
+          <!-- Выбадающий блок фильтрации по странам -->
+          <div class="filter-location__dropdown">
+            <div class="container-all">
+              <div class="filter-location__dropdown-wrapper">
+                <ul class="filter-location__continent-list">
+                  <li class="filter-location__continent-item">
+                    <button class="filter-location__continent-button filter-location__continent-button--active">
+                      Европа
+                    </button>
+                  </li>
+                  <li class="filter-location__continent-item">
+                    <button class="filter-location__continent-button">
+                      Азия
+                    </button>
+                  </li>
+                  <li class="filter-location__continent-item">
+                    <button class="filter-location__continent-button">
+                      Америка
+                    </button>
+                  </li>
+                  <li class="filter-location__continent-item">
+                    <button class="filter-location__continent-button">
+                      Острова
+                    </button>
+                  </li>
+                </ul>
+                <div class="filter-location__alphabet-filter alphabet-filter">
+                  <div class="alphabet-filter__wrapper">
+                    <div class="alphabet-filter__item alphabet-filter__item--target">А</div>
+                    <div class="alphabet-filter__item">Б</div>
+                    <div class="alphabet-filter__item">В</div>
+                    <div class="alphabet-filter__item">Г</div>
+                    <div class="alphabet-filter__item">Д</div>
+                    <div class="alphabet-filter__item">Е</div>
+                    <div class="alphabet-filter__item">З</div>
+                    <div class="alphabet-filter__item">И</div>
+                    <div class="alphabet-filter__item">К</div>
+                    <div class="alphabet-filter__item">Л</div>
+                    <div class="alphabet-filter__item">М</div>
+                    <div class="alphabet-filter__item">Н</div>
+                    <div class="alphabet-filter__item">О</div>
+                    <div class="alphabet-filter__item">П</div>
+                    <div class="alphabet-filter__item">Р</div>
+                    <div class="alphabet-filter__item">С</div>
+                    <div class="alphabet-filter__item">Т</div>
+                    <div class="alphabet-filter__item">У</div>
+                    <div class="alphabet-filter__item">Ф</div>
+                    <div class="alphabet-filter__item">Х</div>
+                    <div class="alphabet-filter__item">Ч</div>
+                    <div class="alphabet-filter__item">Ш</div>
+                    <div class="alphabet-filter__item">Э</div>
+                    <div class="alphabet-filter__item">Ю</div>
+                    <div class="alphabet-filter__item">Я</div>
+                  </div>
+                </div>
+                <ul class="filter-location__country-list">
+                  <li class="filter-location__country-item">
+                    <button class="filter-location__country-button">
+                      Австралия
+                    </button>
+                  </li>
+                  <li class="filter-location__country-item">
+                    <button class="filter-location__country-button">
+                      Австрия
+                    </button>
+                  </li>
+                  <li class="filter-location__country-item">
+                    <button class="filter-location__country-button">
+                      Азербайджан
+                    </button>
+                  </li>
+                  <li class="filter-location__country-item">
+                    <button class="filter-location__country-button">
+                      Алжир
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter-location__close-button">
+                <button class="button-3">
+                  <span class="button-3__icon"></span>
+                  Cвернуть
+                </button>
+              </div >
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- -- -->
+      <div class=" container-all">
+        <div class="filter__wrapper">
+
+          <!-- Фильтрация по интересам -->
+          <section class="filter__filter-interests filter-interests">
+
+            <div class="accordion">
+              <p class="accordion__title">
+                Подберите идеального попутчика
+              </p>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Хобби:
+                </div>
+                <div class="accordion__body">
+                  <div class="filter-interests__checkbox-list">
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Спортзал</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Кальян</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Диван</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Музыка:
+                </div>
+                <div class="accordion__body">
+                  <div class="filter-interests__checkbox-list">
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Тяжелый рок</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Русский рэп</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Евроденс</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Еда:
+                </div>
+                <div class="accordion__body">
+                  <div class="filter-interests__checkbox-list">
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Мясоед</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Сидит на ПП</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input visually-hidden" type="checkbox" name="not">
+                      <span class="checkbox__label">Веган-сыроед</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Транспорт:
+                </div>
+                <div class="accordion__body">
+                  <div class="filter-interests__travel-checkbox-list">
+                    <label class="travel-checkbox travel-checkbox--bg">
+                      <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                      <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                        <use href="./img/icons/icons.svg#icon_plane">
+                      </svg>
+                    </label>
+                    <label class="travel-checkbox travel-checkbox--bg">
+                      <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                      <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                        <use href="./img/icons/icons.svg#icon_bus">
+                      </svg>
+                    </label>
+                    <label class="travel-checkbox travel-checkbox--bg">
+                      <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                      <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                        <use href="./img/icons/icons.svg#icon_bicycle">
+                      </svg>
+                    </label>
+                    <label class="travel-checkbox travel-checkbox--bg">
+                      <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                      <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                        <use href="./img/icons/icons.svg#icon_run">
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button class="filter-interests__button button-1 button-1--white">
+                Показать
+              </button>
+            </div>
+
+          </section>
+      
+          <!-- Отфильтрованные карточки -->
+          <section class="filter__filtered-cards filtered-cards">
+            <ul class="filtered-cards__list">
+              
+              <!-- Карточка путешественника -->
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+              
+              <!-- Карточка путешественника -->
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+              
+              <!-- Карточка путешественника -->
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+              
+              <!-- Карточка путешественника -->
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+
+              <li class="filtered-cards__item">
+                <div class="traveler-card">
+                  <div class="traveler-card__avatar">
+                    <picture>
+                      <source srcset="@img/firsova-desktop.png" media="(min-width: 1440px)">
+                      <source srcset="@img/firsova-tablet.png" media="(min-width: 768px)">
+                      <img src="@img/firsova-mobile.png" alt="" class="traveler-card__avatar-img">
+                    </picture>
+                  </div>
+                  <p class="traveler-card__name">
+                    Таня Фирсова
+                  </p>
+                  <p class="traveler-card__likes">
+                    1,5М
+                  </p>
+                  <p class="traveler-card__hashtag">
+                    #ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи
+                  </p>
+                  <div class="traveler-card__desire">
+                    <p class="traveler-card__desire-text">
+                      хочет посетить:
+                    </p>
+                    <ul class="traveler-card__desire-list">
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Шри-Ланка
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Таиланд
+                      </li>
+                      <li class="traveler-card__desire-item">
+                        <img class="traveler-card__desire-icon" src="@img/belgium-card-mob.png" alt="">
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="traveler-card__transport">
+                    <p class="traveler-card__transport-text">
+                      транспорт:
+                    </p>
+                    <div class="traveler-card__travel-checkbox-list">
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="plane">
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--plane">
+                          <use href="./img/icons/icons.svg#icon_plane">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bus" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bus">
+                          <use href="./img/icons/icons.svg#icon_bus">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="bicycle" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--bicycle">
+                          <use href="./img/icons/icons.svg#icon_bicycle">
+                        </svg>
+                      </label>
+                      <label class="travel-checkbox">
+                        <input class="travel-checkbox__input visually-hidden" type="checkbox" name="run" checked>
+                        <svg class="travel-checkbox__icon travel-checkbox__icon--run">
+                          <use href="./img/icons/icons.svg#icon_run">
+                        </svg>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="traveler-card__level">
+                    <p class="traveler-card__level-text">
+                      левел:
+                    </p>
+                    <div class="traveler-card__rating rating">
+                      <p class="rating__level">99</p>
+                      <p class="rating__text">level</p>
+                    </div>
+                  </div>
+                  <button class="traveler-card__button button-1">
+                    Позвать!
+                  </button>
+                </div>
+              </li>
+      
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
