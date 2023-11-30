@@ -1,1 +1,3 @@
-# pognalihtml
+Верстка
+
+HTML/SCSS/БЭМ/GULP
