@@ -1,0 +1,54 @@
+.travel-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.travel-checkbox--bg {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+
+  background-color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+
+.travel-checkbox__icon {
+  color: #1D2E5B;
+
+  opacity: 0.15;
+}
+
+.travel-checkbox__input:checked+.travel-checkbox__icon {
+  color: #101D41;
+  
+  opacity: 1;
+}
+
+.travel-checkbox__icon--plane {
+  width: 19.82px;
+  height: 20.05px;
+}
+
+.travel-checkbox__icon--bus {
+  width: 17.99px;
+  height: 20px;
+}
+
+.travel-checkbox__icon--bicycle {
+  width: 21.88px;
+  height: 18.75px;
+}
+
+.travel-checkbox__icon--run {
+  width: 16.58px;
+  height: 19.32px;
+}

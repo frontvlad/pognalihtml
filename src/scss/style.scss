@@ -1,0 +1,76 @@
+//Нормализатор
+
+@import "./global/normolize.scss";
+
+
+//Сброс
+
+@import "./global/reset.scss";
+
+
+//Общие стили
+@import "./global/global.scss";
+
+
+//Переменные
+
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --grey: #444444;
+  --grey-2: #CCCCCC;
+  --grey-opacity: rgba(68, 68, 68, 0.3);
+  --blue: #161C35;
+  --blue-2: #1D2E5B;
+  --blue-3: #132576;
+  --blue-4: #121936;
+  --blue-5: #192144;
+  --yellow: #FFD74B;
+  --orange: #FF8D30;
+  --orange-2: #FFA530;
+}
+
+
+//Шрифты
+@import "./fonts.scss";
+
+
+//Блоки
+
+//Кнопки
+@import "./block/button-1.scss";
+@import "./block/button-2.scss";
+@import "./block/button-3.scss";
+@import "./block/button-4.scss";
+
+@import "./block/contacts-link.scss";
+@import "./block/travel-checkbox.scss";
+@import "./block/social.scss";
+@import "./block/rating.scss";
+@import "./block/checkbox.scss";
+
+
+@import "./block/main-nav.scss";
+@import "./block/alphabet-filter.scss";
+@import "./block/country-card.scss";
+@import "./block/traveler-card.scss";
+@import "./block/user-card.scss";
+@import "./block/accordion.scss";
+
+@import "./block/header.scss";
+@import "./block/footer.scss";
+
+@import "./block/intro.scss";
+@import "./block/preview.scss";
+@import "./block/about.scss";
+@import "./block/direction.scss";
+@import "./block/travelers.scss";
+@import "./block/profil.scss";
+@import "./block/registration.scss";
+@import "./block/route.scss";
+@import "./block/travelers-preview.scss";
+@import "./block/filter.scss";
+@import "./block/filter-location.scss";
+@import "./block/filter-interests.scss";
+@import "./block/filtered-cards.scss";
+

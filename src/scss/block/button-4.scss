@@ -1,0 +1,41 @@
+.button-4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+
+  width: 100%;
+
+  padding-top: 21px;
+  padding-right: 21px;
+  padding-bottom: 21px;
+  padding-left: 21px;
+
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background-color: #F3F4F8;
+
+  cursor: pointer;
+}
+
+
+.button-4:hover {
+  background-color: #EDEFF6;
+}
+
+.button-4:active {
+  opacity: 0.3;
+}
+
+
+.button-4--large {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+
+    padding-top: 41px;
+    padding-bottom: 41px;
+}

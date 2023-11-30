@@ -1,0 +1,39 @@
+.filter {
+  background-color: #EDEFF6;
+}
+
+
+.filter__wrapper {
+  padding-top: 21px;
+  padding-bottom: 92px;
+
+  @media (min-width: 768px) {
+    padding-top: 43px;
+    padding-bottom: 108px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-areas:
+      "cards interests";
+    grid-template-columns: 1fr 285px;
+    column-gap: 85px;
+
+    padding-top: 43px;
+    padding-bottom: 123px;
+  }
+}
+
+
+.filter__filtered-interests {
+  @media (min-width: 1440px) {
+    grid-area: interests;
+  }
+}
+
+
+.filter__filtered-cards {
+  @media (min-width: 1440px) {
+    grid-area: cards;
+  }
+}

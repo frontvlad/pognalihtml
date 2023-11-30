@@ -1,0 +1,114 @@
+.country-card {
+  width: 100%;
+  max-width: 340px;
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+
+  @media (min-width: 768px) {
+    max-width: 618px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+
+.country-card__img {
+  display: block;
+  width: 100%;
+  margin-bottom: -11px;
+
+  @media (min-width: 768px) {
+    flex: 186 0 0;
+    margin-bottom: 0;
+  }
+}
+
+.country-card__info {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 24px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    flex: auto 1 1;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-direction: column;
+  }
+}
+
+.country-card__info::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  width: 35px;
+  height: 24px;
+  background-image: url("@img/thailand-card-mob.png");
+
+  @media (min-width: 768px) {
+    top: 17px;
+    right: -35px;
+    width: 70px;
+    height: 47px;
+    background-image: url("@img/thailand-card-tablet-desk.png");
+  }
+}
+
+.country-card__info-text {}
+
+
+.country-card__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+}
+
+.country-card__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.country-card__user {}
+
+.country-card__user-icon {
+  width: 10.5px;
+  height: 11.67px;
+  color: #192144;
+  opacity: 0.1;
+
+  @media (min-width: 768px) {
+    width: 18px;
+    height: 21px;
+  }
+}
+
+.country-card__number-users {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #161C35;
+  opacity: 0.3;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

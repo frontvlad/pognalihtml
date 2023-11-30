@@ -1,0 +1,167 @@
+.nav {
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  @media (min-width: 768px) {
+    padding-top: 53px;
+    padding-bottom: 92px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: 1440px) {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 0;
+    margin-left: 40px;
+  }
+}
+
+.nav-list::before {
+  @media (min-width: 1440px) {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 2px;
+
+    margin-right: 45px;
+
+    background-color: #FFFFFF;
+  }
+}
+
+.nav__item {
+  @media (min-width: 1440px) {
+    margin-right: 34px;
+  }
+}
+
+.nav__link {
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #192144;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
+
+
+.nav__authorization {
+  max-width: 340px;
+
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+.nav__contacts {
+  margin-bottom: 40px;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.nav__contacts .contacts-link__img--tel {
+  @media (min-width: 768px) {
+    width: 23.72px;
+    height: 22.41px;
+  }
+}
+
+.nav__contacts .contacts-link__img--email {
+  @media (min-width: 768px) {
+    width: 27.62px;
+    height: 18.89px;
+  }
+}
+
+.nav__contacts .contacts-link__icon {
+  @media (min-width: 768px) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.nav__contacts .contacts-link__text {
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 28px;
+    
+    margin-left: 26px;
+  }
+}
+
+.nav__social {
+  width: 105px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 138px;
+    margin: 0 0 0 26px;
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.nav__social .social__link-img--facebook {
+  @media (min-width: 768px) {
+    width: 13.52px;
+    height: 27.75px;
+  }
+}
+
+.nav__social .social__link-img--vk {
+  @media (min-width: 768px) {
+    width: 30px;
+    height: 15.82px;
+  }
+}
+
+.nav__social .social__link-img--instagram {
+  @media (min-width: 768px) {
+    width: 22.08px;
+    height: 22.08px;
+  }
+}

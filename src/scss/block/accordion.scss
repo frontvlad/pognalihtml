@@ -1,0 +1,129 @@
+.accordion {
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+
+  border-radius: 20px;
+
+  background-color: #FFD74B;
+}
+
+
+.accordion__title {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #1D2E5B;
+
+  margin-bottom: 23px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.accordion__item {
+  @media (min-width: 768px) and (max-width: 1440px){
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 26px;
+  }
+}
+
+
+.accordion__header {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border-top: 1px solid #F3C72B;
+
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+
+    border: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    width: 105px;
+
+    margin-right: 18px;
+  }
+}
+
+
+.accordion__header::after {
+  content: "";
+
+  display: inline-block;
+
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #1D2E5B;
+
+  transition: all 0.3s linear;
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    display: none;
+  }
+}
+
+
+.accordion__item--active .accordion__header::after {
+  transform: rotate(180deg);
+}
+
+
+.accordion__body {
+  overflow: hidden;
+  visibility: hidden;
+
+  height: 0;
+
+  opacity: 0;
+
+  transition: all 0.3s ease-out;
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    overflow: none;
+    visibility: visible;
+
+    height: auto;
+
+    opacity: 1;
+
+    flex: 1 1 auto;
+  }
+}
+
+
+.accordion__item--active .accordion__body {
+  @media (max-width: 768px), (min-width: 1440px) {
+    overflow: none;
+    visibility: visible;
+
+    height: auto;
+
+    padding-bottom: 21px;
+
+    opacity: 1;
+  }
+}

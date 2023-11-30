@@ -1,0 +1,143 @@
+.about {
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+
+  z-index: 8;
+
+  background-color: #182044;
+  background-image: url("@img/about-mobile.png"), url('@img/shape-back-mob.svg');
+  background-repeat: no-repeat;
+  background-position: bottom center, top 20px left;
+
+  @media (min-width: 768px) {
+    background-image: url("@img/img_tablet.png"), url('@img/shape-back-tablet-desctop.svg');
+    background-position: top 48px right 90px, top left;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("@img/img_back.png"), url('@img/shape-back-tablet-desctop.svg');
+    background-position: bottom right 60px, top 170px left 60px;
+  }
+}
+
+.about__wrapper {
+  padding-top: 33px;
+  padding-bottom: 82px;
+  padding-left: 24px;
+  
+  @media (max-width: 768px) {
+    
+    text-align: center;
+
+  }
+
+  @media (min-width: 768px) {
+    max-width: 800px;
+    padding-top: 41px;
+    padding-bottom: 89px;
+    padding-left: 34px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 132px;
+    padding-bottom: 163px;
+    padding-left: 72px;
+    max-width: none;
+  }
+}
+
+.about__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
+
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 45px;
+    line-height: 45px;
+
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 57px;
+  }
+}
+
+.about-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #FFFFFF;
+  max-width: 211px;
+
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+
+    max-width: 308px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 619px;
+
+    margin-bottom: 38px;
+  }
+}
+
+.about__subtext {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+
+  max-width: 202px;
+
+  @media (max-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 50px;
+
+    max-width: 265px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 85px;
+
+    max-width: 425px;
+  }
+}
+
+
+.about__button {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    
+    width: 276px;
+  }
+}

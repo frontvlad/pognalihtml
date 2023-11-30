@@ -1,0 +1,34 @@
+.filtered-cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  padding-top: 28px;
+
+  @media (min-width: 768px) {
+    row-gap: 39px;
+
+    padding-top: 40px;
+  }
+
+  @media (min-width: 1440px) {
+    row-gap: 30px;
+
+    padding-top: 0;
+  }
+}
+
+.filtered-cards__item {
+  flex: 1 1 270px;
+
+  @media (min-width: 768px) {
+    flex: 1 1 688px;
+  }
+
+  @media (min-width: 1440px) {
+    flex: 1 1 auto;
+  }
+}
+

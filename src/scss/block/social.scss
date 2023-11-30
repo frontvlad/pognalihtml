@@ -1,0 +1,66 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.social__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link--small {
+  width: 45px;
+  height: 45px;
+}
+
+.social__link--large {
+  width: 62px;
+  height: 62px;
+}
+
+.social__link--color {
+  background-color: #FFD74B;
+  border-radius: 50%;
+}
+
+
+.social__link-img {
+  color: #192144;
+}
+
+
+//Размеры картинки
+
+.social__link-img--facebook {
+  width: 10.62px;
+  height: 20.81px;
+}
+
+.social__link-img--facebook-big {
+  width: 13.52px;
+  height: 27.75px;
+}
+
+.social__link-img--vk {
+  width: 22.26px;
+  height: 11.86px;
+}
+
+.social__link-img--vk-big {
+  width: 30px;
+  height: 15.82px;
+}
+
+.social__link-img--instagram {
+  width: 16.56px;
+  height: 16.56px;
+}
+
+.social__link-img--instagram-big {
+  width: 22.08px;
+  height: 22.08px;
+}

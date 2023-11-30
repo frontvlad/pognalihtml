@@ -1,0 +1,83 @@
+.alphabet-filter {
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #1D2E5B;
+
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: #192144;
+  }
+}
+
+
+.alphabet-filter:after {
+  content: '';
+
+  display: block;
+
+  padding-top: 100%;
+}
+
+
+
+.alphabet-filter__wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #E2E5F2;
+
+  @media (min-width: 768px) {
+    gap: 0;
+
+    background-color: transparent;
+  }
+}
+
+
+
+.alphabet-filter__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #FFFFFF;
+
+  cursor: pointer;
+  
+  @media (min-width: 768px) {
+    opacity: 0.3;
+
+    background-color: transparent;
+  }
+}
+
+
+.alphabet-filter__item--target {
+  color: #FFFFFF;
+
+  background-color: #1D2E5B;
+
+  @media (min-width: 768px) {
+    color: #192144;
+
+    background-color: transparent;
+  
+    opacity: 1;
+  }
+}

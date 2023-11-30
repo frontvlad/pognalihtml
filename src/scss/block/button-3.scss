@@ -1,0 +1,83 @@
+.button-3 {
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #192144;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+
+  border-radius: 20px;
+
+  background-color: #D6DAED;
+
+  cursor: pointer;
+}
+
+
+.button-3--large {
+  font-size: 20px;
+  line-height: 20px;
+
+  padding-top: 42px;
+  padding-right: 42px;
+  padding-bottom: 42px;
+  padding-left: 42px;
+}
+
+
+.button-3:hover {
+  background-color: #C8CEE8;
+}
+
+.button-3:active {
+  opacity: 0.3;
+}
+
+
+.button-3__icon {
+  position: relative;
+  left: -22px;
+}
+
+
+.button-3__icon::before,
+.button-3__icon::after {
+  content: "";
+
+  position: absolute;
+  top: -1px;
+
+  height: 2px;
+  width: 15px;
+
+  background-color: #192144;
+}
+
+
+.button-3--large .button-3__icon::before,
+.button-3--large .button-3__icon::after {
+  width: 18px;
+}
+
+
+.button-3__icon::before {
+  transform: rotate(45deg);
+}
+
+
+.button-3__icon::after {
+  transform: rotate(-45deg);
+}

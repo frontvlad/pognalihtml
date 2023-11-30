@@ -1,0 +1,50 @@
+.filter-interests {
+}
+
+
+.filter-interests .accordion {
+  @media (min-width: 1440px) {
+    grid-area: accordion;
+    align-self: start;
+
+    position: sticky;
+    top: 148px;
+  }
+}
+
+
+.filter-interests__travel-checkbox-list {
+  display: flex;
+  column-gap: 2px;
+}
+
+
+.filter-interests__checkbox-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+.filter-interests__button {
+  margin-top: 10px;
+
+  @media (min-width: 768px) and (max-width: 1440px) {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding-top: 18px;
+    padding-right: 25px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+  }
+}
+
+
+
+

@@ -1,0 +1,95 @@
+.button-2 {
+  font-family: 'BloggerSans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1D2E5B;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding-top: 22px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #FFD74B;
+
+  cursor: pointer;
+}
+
+
+.button-2::after {
+  content: "";
+
+  display: block;
+
+  margin-top: 5px;
+  margin-left: 20px;
+
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #1D2E5B;
+}
+
+
+.button-2:hover {
+  background-color: #FFBD30;
+}
+
+
+.button-2:active {
+  opacity: 0.3;
+}
+
+
+.button-2--border {
+  border: 3px solid #192144;
+
+  background-color: transparent;
+}
+
+
+.button-2--border:hover {
+  color: #FFFFFF;
+
+  border: 3px solid #192144;
+
+  background-color: #192144;
+}
+
+
+.button-2--border:hover::after {
+  border-left: 10px solid #FFFFFF;
+}
+
+
+.button-2--border:active {
+  opacity: 0.3;
+}
+
+
+
+.button-2--large {
+  font-size: 24px;
+  line-height: 24px;
+
+  padding-top: 27px;
+  padding-right: 27px;
+  padding-bottom:27px;
+  padding-left: 27px;
+
+  border-radius: 20px;
+}
+
+
+
+
+
